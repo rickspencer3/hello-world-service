@@ -1,4 +1,4 @@
-from bitnami/express:latest
+from bitnami/node:latest
 
 COPY app/hello-world /app/
 WORKDIR /app/
