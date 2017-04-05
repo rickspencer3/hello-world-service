@@ -1,10 +1,9 @@
 from bitnami/express:latest
 
-COPY app/ /app/
-WORKDIR /app/hello-world
+COPY app/hello-world /app/
+WORKDIR /app/
 
 RUN sudo chown -R bitnami:bitnami /app
 
-RUN npm install
 
 CMD ["npm", "start"]
